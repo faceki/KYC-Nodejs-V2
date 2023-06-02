@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express')
 const cors = require('cors');
 const path = require('path')
@@ -7,7 +8,6 @@ var bodyParser = require('body-parser')
 const app = express()
 
 const port = process.env.PORT || 4848
-
 
 const publicDirectoryPath = path.join(__dirname,'../public/')
 const publicDirectoryPath1 = path.join(__dirname,'../src/routers/uploads')
